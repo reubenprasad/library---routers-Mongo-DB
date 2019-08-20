@@ -87,7 +87,7 @@
       
       <div class="panel">
         <div class="panel-body">
-         <form action="/addbook" method="POST">
+         <form action="/book/addbook" method="POST" enctype="multipart/form-data">
             <p style="font-size: 30px; text-align: center" id="r">Add Book</p>
             <table class="table" style="width: 600px; margin:auto; border: 2px solid black; border-collapse: collapse;">
                 <tr>
@@ -106,7 +106,7 @@
 
                 <tr>
                     <td>Image :</td>
-                    <td><input type="text" class="form-control" name="image"  placeholder="Upload Image" required></td>
+                    <td><input type="file" class="form-control" name="image"  placeholder="Upload Image" required></td>
                 </tr>
                 
                 <tr style="text-align: left">                        

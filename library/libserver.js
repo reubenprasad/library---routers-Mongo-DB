@@ -26,28 +26,9 @@ app.get("/",function(req,res){
    res.redirect('/user')
     });
 
-/* app.post("/login",function(req,res){
-    users.find({username:req.body.un,password:req.body.pw},function(err,result){
-        if(err) 
-        throw err;
-        else if(result.length == 0)
-        {
-            res.redirect('/');
-        }
-        else
-        {
-            res.redirect('index');
-        }
-    })
-   
-    }); */
 app.get("/index",function(req,res){
-    res.render("index",{pTitle:"Library",nav:[{link:"/book",title:"Book"},{link:"/auth",title:"Author"},{link:"/",title:"Log Out"},{link:"/addbook",title:"Add New Book"}]});
+    res.render("index",{pTitle:"Library",nav:[{link:"/book",title:"Book"},{link:"/auth",title:"Author"},{link:"/",title:"Log Out"},{link:"/book/addbook",title:"Add New Book"}]});
     });
-app.get("/addbook",function(req,res){
-    res.render("addbook",{pTitle:"Add New Book",nav:[{link:"/book",title:"Book"},{link:"/auth",title:"Author"},{link:"/",title:"Log Out"}]});
-    });
-
 
 app.listen(process.env.PORT || 3000, () => console.log('Server Running on http://localhost:3000')); 
    
