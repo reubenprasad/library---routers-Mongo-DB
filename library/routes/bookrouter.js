@@ -12,7 +12,7 @@ var storage =   multer.diskStorage({
   });  
   var upload = multer({ storage : storage}).single('image');
 var mongoose = require('mongoose')
-var url = "mongodb://localhost/Library"
+var url = "mongodb+srv://reuben:1234@cluster0-fcmwh.mongodb.net/Library?retryWrites=true"
 var books = require("../model/Book"); 
 mongoose.connect(url,function(err){
     if(err) 
@@ -40,6 +40,7 @@ router.get("/sp/:title",function(req,res){
     });
 
  router.post("/addbook",upload, function(req,res){
+    
      var b = new books();
      b.title = req.body.title;
      b.author = req.body.author;

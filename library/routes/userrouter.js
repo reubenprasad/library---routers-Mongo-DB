@@ -1,7 +1,7 @@
 var express = require('express')
 const router = express.Router();
 var mongoose = require('mongoose')
-var url = "mongodb://localhost/Library"
+var url = "mongodb+srv://reuben:1234@cluster0-fcmwh.mongodb.net/Users?retryWrites=true"
 var users = require("../model/User"); 
 var bodyparser = require('body-parser')
 mongoose.connect(url,function(err){
