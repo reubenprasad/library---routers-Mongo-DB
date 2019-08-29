@@ -26,3 +26,7 @@ router.get("/sa/:author",function(req,res){
         
  })
 
+ router.get("/view/:img",function(req,res){    
+    res.sendFile(path.join(__dirname+"../../public/images/"+req.params.img))
+})
+
