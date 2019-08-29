@@ -1,7 +1,6 @@
 {
   "name": "library",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "dependencies": {
     "body-parser": "^1.19.0",
@@ -24,5 +23,6 @@
   "bugs": {
     "url": "https://github.com/reubenprasad/library-router/issues"
   },
-  "homepage": "https://github.com/reubenprasad/library-router#readme"
+  "homepage": "https://github.com/reubenprasad/library-router#readme",
+  "description": ""
 }
