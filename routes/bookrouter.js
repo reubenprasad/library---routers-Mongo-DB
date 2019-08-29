@@ -50,7 +50,7 @@ router.get("/sp/:title",function(req,res){
         if (err) throw err;
         else{
             console.log("Added");
-            res.redirect("/addbook");
+            res.redirect("/book/addbook");
         }
     })
     })
